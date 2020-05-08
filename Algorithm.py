@@ -22,8 +22,8 @@ def initial():                                                          #The use
 def gen():                                                              #Function to generate the Opponents input
    opp_choice=random.randint(1,3)
    if(opp_choice==1):return "stone"
-   if(opp_choice==2):return "paper"
-   if(opp_choice==3):return "scissors" 
+   elif(opp_choice==2):return "paper"
+   else:return "scissors" 
 def Cardinal():                                                         #The head function of the game Cardinal
     userInput=initial()                                                  
     if(userInput==1):user_choice= "stone"
